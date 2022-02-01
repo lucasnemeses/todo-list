@@ -1,8 +1,9 @@
 # :pencil: Lista de Tarefa
 
-Projeto simples para estudo de Javascript.
+Projeto simples para estudo do Javascript.
 
-Pedentencias:
-- Remover item
-- Salvar no LocalStorage
-- Salvar usando enter
+## Funcionalidades
+- Adição e remoção de tarefas no localStorage via click no botão ou pressionando enter.
+- Alteração de estado (pendentes / concluída).
+
+![To Do List](imgs/todo-list.gif)
