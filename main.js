@@ -6,10 +6,15 @@
     });
 
     function loadItem() {
-        const todo = JSON.parse(localStorage.todoList);
-        todo.forEach(function(item) {
-            createTodoElements(item.value, item.id, item.status == 'done' ? true : false);
-        });
+        if (localStorage.getItem('todoList') !== undefined) {
+            const todo = JSON.parse(localStorage.getItem('todoList'));
+
+            if (todo instanceof Array && todo.length !== 0) {
+                todo.forEach(function(item) {
+                    createTodoElements(item.value, item.id, item.status == 'done' ? true : false);
+                });
+            }
+        }
     }
 
     function emptyList() {
