@@ -1,6 +1,6 @@
-# :pencil: Lista de Tarefa
+# :pencil: todo-list
 
-Projeto simples para estudo do Javascript.
+Lista de tarefas
 
 ## Funcionalidades
 - Adição e remoção de tarefas no localStorage via click no botão ou pressionando enter.
